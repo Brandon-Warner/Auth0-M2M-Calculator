@@ -2,7 +2,7 @@ This project is to help sales reps calculate the appropriate number of tokens fo
 
 We are accounting for 2 scenarios:
 
-A - The customer has a known number of connections, a known number of days, and a known buffer percentage. 
+A - The customer has a known number of connections, a known number of days, and a known buffer percentage to account for Dev/Staging tenants or API cluster reboots. 
 
 B - The customer has a known number of API calls per month and a known token lifetime. 
 
