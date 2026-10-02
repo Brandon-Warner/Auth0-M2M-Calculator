@@ -1,16 +1,9 @@
-# React + Vite
+This project is to help sales reps calculate the appropriate number of tokens for a given M2M integration. It is based on the Auth0 documentation for [Machine to Machine Token Lifetime](https://auth0.com/docs/tokens/machine-to-machine-tokens/token-lifetime).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We are accounting for 2 scenarios:
 
-Currently, two official plugins are available:
+A - The customer has a known number of connections, a known number of days, and a known buffer percentage. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+B - The customer has a known number of API calls per month and a known token lifetime. 
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Reps will see the estimated number of tokens, and the appropriate Auth0 SKU.
