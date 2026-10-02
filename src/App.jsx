@@ -152,7 +152,7 @@ export default function Auth0TokenEstimator() {
                     className={inputClass}
                     placeholder="e.g. 3600"
                   />
-                  <p className="text-xs text-gray-400 mt-1.5">How long each token remains valid. Auth0 default is 86400s (24 hours). 3600s = 1 hour</p>
+                  <p className="text-xs text-gray-400 mt-1.5">How long each token remains valid. Auth0 default is 86400s (24 hours). 3600s = 1 hour.</p>
                 </div>
               </>
             ) : (
@@ -185,7 +185,7 @@ export default function Auth0TokenEstimator() {
                     className={inputClass}
                     placeholder="e.g. 3600"
                   />
-                  <p className="text-xs text-gray-400 mt-1.5">How long each token remains valid. Default is 3,600 s (1 hour).</p>
+                  <p className="text-xs text-gray-400 mt-1.5">How long each token remains valid. Default is 86,400s (24 hours). 3600s = 1 hour.</p>
                 </div>
               </>
             )}
